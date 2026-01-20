@@ -1,3 +1,7 @@
+set $XDG_DOWNLOAD_DIR "$HOME/Downloads"
+exec --no-startup-id export XDG_DOWNLOAD_DIR="$HOME/Downloads"
+exec --no-startup-id export HOME="$HOME"
+
 # Default config for sway
 #
 # Copy this to ~/.config/sway/config and edit it to your liking.
@@ -18,18 +22,24 @@ set $right l
 # === APPLICATIONS ALIAS ===
 #
 set $term kitty
-set $browser flatpak run ru.yandex.Browser
+set $browser yandex-browser-stable
 set $tg flatpak run org.telegram.desktop
 set $ymusic flatpak run space.rirusha.Cassette
 set $smusic spotify
 set $code flatpak run com.visualstudio.code
 set $screenshot sway-screenshot -m region --clipboard-only
 set $menu wmenu-run
+set $file_exp nautilus
 
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
+
+#
+# === WALLPAPERS ===
+#
+output * bg /home/theun1c/Downloads/w2.webp fill
+
 #
 # Example configuration:
 #
@@ -92,9 +102,10 @@ output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
     bindsym $mod+Shift+y exec $ymusic 
     bindsym $mod+Shift+m exec $smusic
     bindsym $mod+Shift+v exec $code
-    #screenshot
+    # screenshot
     bindsym $mod+Shift+s exec $screenshot
-
+    # file explorer 
+    bindsym $mod+Shift+x exec $file_exp
     # anoter apps comming soon
 
 
