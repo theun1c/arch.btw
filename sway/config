@@ -3,6 +3,8 @@ default_floating_border pixel 2
 
 set $opacity_value 0.9
 for_window [app_id="kitty"] opacity $opacity_value
+for_window [app_id="visual-studio-code-electron"] opacity $opacity_value
+for_window [app_id="spotify"] opacity $opacity_value
 
 set $XDG_DOWNLOAD_DIR "$HOME/Downloads"
 exec --no-startup-id export XDG_DOWNLOAD_DIR="$HOME/Downloads"
@@ -32,7 +34,7 @@ set $browser firefox
 set $tg snap run telegram-desktop
 set $ymusic flatpak run space.rirusha.Cassette
 set $smusic spotify
-set $code code
+set $code visual-studio-code-electron
 set $screenshot sway-screenshot -m region --clipboard-only
 set $menu wmenu-run
 set $file_exp nautilus
@@ -270,16 +272,7 @@ bindsym $mod+r mode "resize"
 # Read `man 5 sway-bar` for more information about this section.
 bar {
     position top
-
-    # When the status_command prints a new line to stdout, swaybar updates.
-    # The default just shows the current date and time.
-    status_command while date +'%Y-%m-%d %X'; do sleep 1; done
-
-    colors {
-        statusline #ffffff
-        background #323232
-        inactive_workspace #32323200 #32323200 #5c5c5c
-    }
+    swaybar_command waybar 
 }
 
 include /etc/sway/config.d/*

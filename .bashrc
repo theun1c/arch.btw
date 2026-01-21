@@ -9,9 +9,8 @@ alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 PS1='[\u@\h \W]\$ '
 
-
-source /usr/share/bash-completion/bash-completion
-
 alias cfg='sudo nvim /etc/sway/config'
 alias sn='sudo nvim'
 alias snn='sudo nano'
+
+fastfetch
