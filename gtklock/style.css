@@ -1,0 +1,17 @@
+window {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #ffffff;
+}
+
+#clock-label {
+    font-size: 48px;
+    color: #ffffff;
+}
+
+#user-image {
+    border-radius: 50%;
+}
+
+#prompt-label {
+    color: #cccccc;
+}
