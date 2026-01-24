@@ -19,5 +19,6 @@ alias gc='git commit -m'
 alias gp='git push -u'
 alias gs='git status'
 alias ga='git add .'
+alias gcb='git checkout -b'
 
 fastfetch
