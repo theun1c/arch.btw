@@ -20,5 +20,7 @@ alias gp='git push -u'
 alias gs='git status'
 alias ga='git add .'
 alias gcb='git checkout -b'
+alias gsw='git switch'
+alias gpl='git pull'
 
 fastfetch
