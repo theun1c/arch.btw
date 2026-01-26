@@ -6,3 +6,6 @@ current system view (sway + waybar + arch)
 
 and my menu view 
 ![rofi](assets/rofi.png)
+
+second version of deskrop view
+![v2](assets/pi2.png)
