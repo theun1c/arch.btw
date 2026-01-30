@@ -3,7 +3,7 @@ default_floating_border pixel 2
 
 set $opacity_value 0.92
 for_window [app_id="kitty"] opacity $opacity_value
-for_window [app_id="visual-studio-code-electron"] opacity $opacity_value
+for_window [app_id="code"] opacity $opacity_value
 for_window [app_id="spotify"] opacity $opacity_value
 
 set $XDG_DOWNLOAD_DIR "$HOME/Downloads"
@@ -35,11 +35,11 @@ set $yb yandex-browser-stable
 set $tg snap run telegram-desktop
 set $ymusic flatpak run space.rirusha.Cassette
 set $smusic spotify
-set $code visual-studio-code-electron
+set $code code
 set $screenshot sway-screenshot -m region --clipboard-only
 set $menu wmenu-run
 set $file_exp nemo
-set $vpn throne
+set $vpn nekobox
 set $rofi rofi -show run
 set $lock gtklock
 
